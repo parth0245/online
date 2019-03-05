@@ -1,10 +1,13 @@
+*{
+    outline: none;
+}
 .bottomHeader {
     background-color: #ffffff;
 }
 .headerList li{
     display: inline-block;
     font-size: 20px;
-    padding:40px 25px;
+    padding:35px 25px;
 }
 .logoHead{
     font-weight: bold;
@@ -23,4 +26,12 @@
     border-color: #95c41f;
     padding: 5px 25px;
     font-size: 20px;
+}
+.is-active{
+    color:#95c41f;
+    border-top: 5px solid #95c41f;
+}
+.btn-success.is-active-button {
+    background-color:#95c41f !important;
+    color:white !important;
 }

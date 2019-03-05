@@ -8,13 +8,13 @@
     </div>
     <div class="col-lg-6">
       <ul class="headerList">
-        <li>Home</li>
-        <li>Property</li>
-        <li>Agents</li>
-        <li>Pages</li>
+        <li class="cursorPointer" [routerLink]="['/dashboard/home']" [routerLinkActive]="['is-active']">Home</li>
+        <li class="cursorPointer" [routerLink]="['/dashboard/property']" [routerLinkActive]="['is-active']">Property</li>
+        <li class="cursorPointer" [routerLink]="['/dashboard/agents']" [routerLinkActive]="['is-active']">Agents</li>
+        <li class="cursorPointer" [routerLink]="['/dashboard/projects']" [routerLinkActive]="['is-active']">Projects</li>
       </ul>
     </div>
     <div class="col-lg-4 text-right submitProp">
-      <button type="button" class="btn btn-success">Submit Property</button>
+      <button type="button" class="btn btn-success cursorPointer" [routerLink]="['/dashboard/submit']" [routerLinkActive]="['is-active-button']">Submit Property</button>
     </div>
   </header>

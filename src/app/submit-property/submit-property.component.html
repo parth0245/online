@@ -1,0 +1,135 @@
+<div class="col-lg-12">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Sell or Rent your Property</h1>
+      <p>You will post your property for
+        <span class="green">1000</span> Rs.</p>
+
+      <div>
+        <h3>Personal Details</h3>
+        <div>
+          <div>
+            <form>
+              <div class="form-check">
+                <label>
+                  I Am :
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="radio" name="radio" (click)="setIam('owner')">
+                  <span class="label-text">Owner</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="radio" name="radio" (click)="setIam('agent')">
+                  <span class="label-text">Agent</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="radio" name="radio" (click)="setIam('builder')">
+                  <span class="label-text">Builder</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" *ngIf="agent">
+
+      </div>
+      <div class="row" *ngIf="builder">
+      </div>
+
+      <div class="row" *ngIf="owner">
+        <form class="col-lg-4">
+          <div class="input-group">
+            <span class="input-group-addon">Name</span>
+            <input type="text" class="form-control" name="msg" placeholder="Your Name Here">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Email</span>
+            <input type="text" class="form-control" name="msg" placeholder="Your Email Here">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Mobile</span>
+            <input type="text" class="form-control" name="msg" placeholder="Your Contact Here">
+          </div>
+        </form>
+        <div class="col-lg-12">
+          <div>
+            <h3>Property Details</h3>
+            <div>
+              <div>
+                <form>
+                  <div class="form-check">
+                    <label>
+                      For :
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label>
+                      <input type="radio" name="radio">
+                      <span class="label-text">Sale</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label>
+                      <input type="radio" name="radio">
+                      <span class="label-text">Rent</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label>
+                      <input type="radio" name="radio">
+                      <span class="label-text">PG</span>
+                    </label>
+                  </div>
+                  <div class="col-lg-12 noPadding">
+                    <div class="form-group col-lg-3 noPadding">
+                      <select class="form-control">
+                        <option>Property Type</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-12">
+          <div>
+            <h3>Property Location</h3>
+            <div>
+              <div>
+                <form>
+                  <div class="col-lg-12 noPadding">
+                    <div class="form-group col-lg-3 noPadding">
+                      <select class="form-control">
+                        <option>Locality</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <button class="btn btn-success col-lg-3" *ngIf="showLoginButton" [routerLink]="['/dashboard/packages']">
+        Continue
+      </button>
+
+    </div>
+  </div>
+</div>

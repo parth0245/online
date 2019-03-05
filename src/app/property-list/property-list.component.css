@@ -4,12 +4,13 @@
     padding: 5px 25px;
     font-size: 20px;
 }
-.color-green{
+.color-green {
     color: #95c41f;
 }
 .filterSection {
     background: #e6e6e6;
     padding: 40px 0 20px;
+    border-radius: 20px;
 }
 .form-control {
     font-size: 16px;
